@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+    <title>The Manual for the Riversand</title>
+    <style>
+
+body{
+  background: #f2f2f2;
+}
+
+.searchTerm {
+  width: 20%;
+  border: 3px solid rgb(216, 188, 213);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+  position: absolute;right: 30px;top: 36px;
+}
+
+.searchTerm:focus{
+  color:black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(216, 188, 213);
+  background: rgb(216, 188, 213);
+  text-align: center;
+  color:white ;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;right: 28px;top: 36px;
+}
+
+
+
+        img.brand{
+            width:180px; 
+           
+            position: fixed;top:16px;left: 98px;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            width: 12%;
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(216, 188, 213);
+            position: fixed;
+            overflow:auto;
+            border: 6px double whitesmoke;
+        
+            
+        }
+ 
+    li a {
+        display: block;
+        color: rgb(147, 83, 147);
+        padding: 8px 16px;
+        text-decoration: none;
+        font-weight: 666;
+    }
+    li a.active {
+        background-color: plum;
+        color: plum;
+    }
+    /* 鼠标移动到选项上修改背景颜色 */
+    li a:hover:not(.active) {
+        background-color:rgb(130, 41, 130);
+        color: white;
+    }
+
+ .导航行 {
+    display: block;
+    color: whitesmoke;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.导航行{
+    list-style-type: none;
+    margin-top: 56px;
+    padding: 6px;
+    overflow: auto;
+    background-color:  rgb(158, 81, 147);
+    
+}
+.导航行文本 {
+    float: right;
+    
+}
+.导航行文本 a {
+    display: block;
+    color: whitesmoke;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.导航行文本 a:hover {
+    background-color:  rgb(216, 188, 213);
+}
+
+table, td, th
+{
+	border:1px solid  rgb(147, 62, 137);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 280px;
+    margin-top: 0px;
+    
+    
+    
+}
+th
+{
+	background-color :rgb(147, 62, 137);
+	color:whitesmoke;
+    
+   
+}
+table
+{
+	width:70%;
+    position: relative;
+    
+    
+}
+th
+{
+	height:30px;
+}
+h2{
+    margin-left: 500px;
+}
+.step{
+    margin-left: 500px;
+    font-size: larger;
+    margin-right: 110px;
+}
+img.step{
+    position: fixed;left:0px;
+    width:1040px;
+}
+.fa-circle{
+    font-size: small;
+}
+
+mark {
+            background: orange;
+            color: black;
+        }
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.8;
+}
+    </style>  
+</head>
+<body>
+<!-- 搜索JSCODE -->
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.es6.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("input").on("input.highlight", function () {
+            // Determine specified search term
+            var searchTerm = $(this).val();
+            // Highlight search term inside a specific context
+            $("#context").unmark().mark(searchTerm,
+                {
+                    "acrossElements": true,
+                    "separateWordSearch": false,
+                }
+            );
+        }).trigger("input.highlight").focus();
+    });
+</script>
+<!-- brand-->
+<img class="brand" src="image\R-C.png" alt="" style="position: relative;"> 
+<form class="example" action="">
+<input type="text" class="searchTerm" placeholder="Search">
+<button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+</form>
+<div id="context">
+ <u1 class="导航行">
+    <li class="导航行文本"><a href="Appendix.html">Appendix</a></li>
+    <li class="导航行文本"><a href="Golden_Tasks.html">Golden Tasks</a></li>
+    <li class="导航行文本"><a href="General_Workflow.html">General Workflow</a></li>
+    <li class="导航行文本"><a href="Operation_Guideline.html">Operation Guideline</a></li>
+</u1>
+ 
+ <ul>
+    <i class="fa fa-list"style="font-size:24px;color: rgb(145, 76, 145);" ></i>
+    
+    
+    <li><a href="#news">For Compliance</a></li>
+    <li style="padding-left: 18px;" ><a href="#market"> i. SKU(Golden)CM: SKU Marketability Check</a></li>
+    <li style="padding-left: 18px;" ><a href="#market"> ii. SKU(Golden)CM: Sales Country Change for CMS</a></li>
+
+    <li><a href="#where">For Sourcer</a></li>
+    <li style="padding-left: 18px;" ><a href="#image">i. SKU(Golden&P03)SR: Image[Entity]</a></li>
+    <li style="padding-left: 18px;" ><a href="#where">ii. SKU(Golden&P05)SR: Key Data&Order Mismatch</a></li>
+    
+
+    <li style="padding-left: 36px;" ><a href="#where">a. Where can I find it?</a></li>
+    <li style="padding-left: 36px;"><a href="#Table">b. How to deal with it?</a></li>
+    <li><a href="#about">Set Creation Task</a></li>
+    <li><a href="#about">Repeating Order </a></li>
+</ul>
+<!-- 怎么找到05 -->
+<h2 id="where">Where can I find SKU that I need to deal with in Riversand?</h2>
+    <p class="step">Step 1:  Find “05 report(progress>=05)” in the “Shared  Search Results”.</p>
+    <img class="step"   src="image\05 S1.png" alt="" style="position: relative;" width="960">
+    <p class="step">Step 2:<br><br>
+    Method 1: If the QTY of  SKUS is too many for you deal with,  Download them and choose saved selections in the “Shared Scope Selection” named “05 for report”.<br>
+    </p>
+    <img class="step" src="image\05 S3.1.png" alt="" style="position: relative;"><br><br> 
+    <img class="step" src="image\05 S3.2.png" alt="" style="position: relative;"> 
+    <p class="step">
+        Method 2: If only a few numbers of SKUs that you need to deal with, you can click the every single SKU. Then, you will see some obvious reminders to guide you how to do with it.(The Screenshot is just one of the situations you might face after you click on the task.)<br>
+    </p>
+    <img class="step" src="image\05 S3.3.png" alt="" style="position: relative;"><br><br> 
+    <img class="step" src="image\05 S3.4.png" alt="" style="position: relative;"><br><br> 
+    <img class="step" src="image\05 S3.5.png" alt="" style="position: relative;"> 
+    <br><br>
+<!-- 05如何处理 -->
+<H2 id="Table">How to deal with it?</H2>
+<div>
+    <table style=" margin-left:500px;">
+        <tr>
+        <th width="200">The Reasons why the task opens</th>
+        <th width="160">Relevant Attributes</th>
+        <th>Function Logic</th>
+        <th>How to do?</th>
+        </tr>
+        <tr>
+        <td>Version Reason &Previous SKU Mismatch</td>
+        <br>
+        <td>"Version Reason"<br><br>"Previous SKu"</td>
+        <td><br>
+            1. When "Version Reason" is filled "New Sales Item" and "Previous SKU"  has value, the task will fail.
+            <br><br>
+            2. When "Version Reason" is filled "Substitution" and "Previous SKU" does not have value, the task will fail.
+        <br><br></td>
+
+        <td>1. If the SKU is "New Sales Item", you should clear the value in "Previous SKU".
+            <br><br>
+            2. If the SKU is "Substitution", you should fill the value in "Previous SKU".</td>
+        </tr>
+        <tr>
+        <td>CC code has the same value as the SKU/ SET</td>
+        <td>CC Code</td>
+        <td>When the CC code has the same value as the SKU/ SET, the task will fail.</td>
+        <td><br>Check whether you upload the wrong CC code unconsciously.
+            If not, ask Han Luo (<a href="mailto:Han.Luo@habaservices.com">Han.Luo@habaservices.com</a>) to apply for the correct CC code.<br><br></td>
+        </tr>
+        <tr>
+        <td >Mismatch with CM Defined Block Rule</td>
+        <td>"CM Defined Block Rule(EUR)"<br>
+           <br> "Plug Type"<br>
+           <br>"BBQ Gas Connect"<br>
+           <br> "(Fabric)UK Fire Retardant"</td>
+        <td><a href="Appendix.html ">See CM Defined Blcok Rule Mismatch Logic !</a></td>
+        <td><br>Check the "Plug Type", "BBQ Gas Connect" and "(Fabric)UK Fire Retardant". 
+            <br><br>
+            If some info is correct on your side:
+            <br>Method 1: Ask the CM to check "CM Defined Block Rule" written by them directly.
+            <br>Method 2:  Wait for their check passively because the CM also have a task to remind them to check "CM Defined Block Rule".
+            <br><br>
+            If some info is wrong on your side:
+            <br>First, correct them to the right value.
+            <br>Then, if there is no mismatch between info written by SR and CM, this part is finished. If not, refer to the Method 1 and Method 2.<br><br></td>
+        </tr>
+        <tr>
+        <td>Has no project</td>
+        <td><br>"Sourcing Number for Mapping"<br>
+            <br>"Sourcing Number"<br><br></td>
+        <td>When the SKU does not link one project, the task will fail.</td>
+        <td><br> Fill the value in "Sourcing Number for Mapping".
+        (Ways:  Bulk Operation, Excel or modify the blank)<br><br></td>
+        </tr>
+
+        <tr>
+            <td>Lack of Required Info</td>
+            <td><br>"Plug Type"<br>
+                <br>"Power Type"<br>
+                <br>"Warehouse for first order"<br>
+                <br>"UK fire retardant"<br>
+                <br></td>
+            <td><br>1. When the SKU was placed the repeating order, “Power Type” has electric and the “Plug Type” is empty, the task will fail.<br><br>
+                2.  When the SKU was placed the repeating order,  “Warehouses for first order” has EUR and “UK Fire Retardant” is empty, the task will fail.<br><br>
+                </td>
+            <td><br>Fill the value in “Plug Type” and  “UK Fire Retardant”.
+            <br><br></td>
+            </tr>
+        </table>
+    </div>  
+</div>
+</body>
+</html>

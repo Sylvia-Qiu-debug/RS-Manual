@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+    <title>The Manual for the Riversand</title>
+    <style>
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+.searchTerm {
+  width: 20%;
+  border: 3px solid rgb(216, 188, 213);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+  position: absolute;right: 30px;top: 36px;
+}
+
+.searchTerm:focus{
+  color:black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(216, 188, 213);
+  background: rgb(216, 188, 213);
+  text-align: center;
+  color:white ;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;right: 28px;top: 36px;
+}
+
+
+
+        img{
+            width:180px; 
+           
+            top:16px;left: 98px;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 18px;
+            padding: 0;
+            width: 13.4%;
+            height: fit-content;
+            width: fit-content;
+            background-color: rgb(216, 188, 213);
+            position: fixed;
+            overflow: auto;
+            border: 6px double whitesmoke;
+           
+        }
+ 
+    li a {
+        display: block;
+        color: rgb(147, 83, 147);
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li a.active {
+        background-color: plum;
+        color: plum;
+    }
+
+    li a:hover:not(.active) {
+        background-color:rgb(130, 41, 130);
+        color: white;
+    }
+
+
+.导航行 {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 88px;
+    padding: 6px;
+    overflow: auto;
+    background-color:  rgb(147, 62, 137);
+    
+    
+}
+.导航行文本 {
+    float: right;
+    
+    
+}
+.导航行文本 a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.导航行文本 a:hover {
+    background-color:  rgb(216, 188, 213);
+}
+
+
+table, td, th
+{
+	border:1px solid  rgb(147, 62, 137);
+    text-align: left;
+    font-size: 16PX;
+    font-weight: 300;
+    height: 30px;
+}
+th
+{
+	background-color :rgb(147, 62, 137);
+	color:whitesmoke;
+   
+}
+table
+{
+	width:68%;
+    position: relative;
+}
+th
+{
+	height:30px;
+}
+h3{
+    margin-left: 400px;
+    font-weight: 600;
+    color:  black;
+}
+
+    </style>
+</head>
+<body>
+
+<div id="context" >
+<img src="image\R-C.png" alt="" style="position: relative;"> 
+<form class="example" target="_self" method="get" action="Operation_Guideline.html">
+<input type="text" class="searchTerm" placeholder="Search">
+<button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+</form>
+
+ <u1 class="导航行">
+    <li class="导航行文本"><a href="Appendix.html">Appendix</a></li>
+    <li class="导航行文本"><a href="Golden_Tasks.html">Golden Tasks</a></li>
+    <li class="导航行文本"><a href="General_Workflow.html">General Workflow</a></li>
+    <li class="导航行文本"><a href="Operation_Guideline.html">Operation Guideline</a></li>
+    
+    
+    
+</u1>
+ 
+ <ul>
+    <i class="fa fa-list" style="font-size:24px;color: rgb(145, 76, 145);" ></i>
+    <li><a href="#Table">History Version</a></li>
+    <li><a href="#Mismatch Logic"> CM Defined Rule Block Mismatch Logic</a></li>
+    <li><a href="#Golden Info"> Sourcer Golden Info</a></li>
+    <li><a href="#Misamtch">CM Defined Block Rule</a></li>
+
+</ul>
+
+<h3 id="Table" style="font-weight: 600;color:  black;">History Version</h3>
+<div>
+<table style=" margin-left:400px;">
+    <tr>
+    <th>Changing Points</th>
+    <th>Name</th>
+    <th>Date</th>
+    </tr>
+    
+    <tr>
+    <td>Creation</td>
+    <td>Sylvia</td>
+    <td>2024-06-28</td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    </table>
+</div>
+
+<h3 id="Mismatch Logic" style="font-weight: 600;color:  black;">CM Defiend Block Rule Mismatch Logic</h3>
+<div>
+    <table style=" margin-left:405px;">
+        <tr>
+        <th>CM Defined Block rule</th>
+        <th>Sourcer Info</th>
+        </tr>
+
+        <tr>
+        <td>"Gas Product"</td>
+        <td>"Gas Connect" not has value</td>
+        </tr>
+
+        <tr>
+        <td>"UK upholstered Product"</td>
+        <td>"UK fire Retardant" is false or empty</td>
+        </tr>
+
+        <tr>
+        <td>Not has "UK upholstered Product"</td>
+        <td>"UK fire Retardant" is true</td>
+        </tr>
+
+        <tr>
+        <td>"EUR Plug Product"</td>
+        <td>"Plug type" Not has EU or UK Plug</td>
+        </tr>
+
+        <tr>
+        <td>Not has "EUR Plug Product"</td>
+        <td>"Plug type" has EU or UK Plug</td>
+        </tr>
+
+        <tr>
+            <td>Empty</td>
+            <td>"Plug type" has has EU and UK Plug</td>
+        </tr>
+    </table>
+    </div>
+
+    <h3 id="Golden Info"  style="font-weight: 600;color:  black;">Sourcer Golden Info</h3>
+    
+        <table style=" margin-left:405px;width:200px;">
+    <tr>
+        <th>Golden Info</th>
+    </tr>
+
+        <tr>
+        <td>BBQ Gas Connect</td>
+        </tr>
+        <tr>
+            <td>Warehouse for First Order</td>
+        </tr>
+
+         <tr>
+            <td>Plug Type</td>
+        </tr>
+<tr><td>Power Type	</td></tr>
+<tr><td>Sourcing Manual Type</td></tr>
+<tr><td>	UK Fire Fetardant	</td></tr>
+<tr><td>	Applicable Child Age	</td></tr>
+<tr><td>	Country of Origin	</td></tr>
+<tr><td>	EU brand or not?	</td></tr>
+<tr><td>	Fabric Composition</td></tr>
+<tr><td>	Factory model ID	</td></tr>
+<tr><td>	Sourcing Number		</td></tr>
+    </table>  
+<h3 id="Block Rule" style="font-weight: 600;color:  black;">CM Defined Block Rule</h3>
+<div>
+<table style=" margin-left:400px;">
+    <tr>
+    <th>CM Defined Block Rule</th>
+    <th>Info Written by Sourcer</th>
+    <th >EUR Blocked Countries(System)</th>
+    </tr>
+    
+    <tr>
+    <td>CITEIS Product</td>
+    <td>NA</td>
+    <td>Norway||Swiss||UK||Iceland||Ukraine </td>
+    </tr>
+
+    <tr>
+    <td>Gas Product</td>
+    <td>Gas Connect = DE Connect</td>
+    <td><br>France||Netherland||Italy||Belgium||Bulgaria||Croatia||Czech||Denmark||<br>Estonia||Finland||Greece||Hungary||Ireland||Latvia||Lithuania||Poland||Luxembourg||Portugal||<br>Romania||Slovakia||Slovenia||Spain||Sweden||Norway||UK||Iceland||Ukraine
+        <br><br></td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>Gas Connect = FR Connect</td>
+    <td><br>Germany||Austria||Belgium||Bulgaria||Denmark||Estonia||Finland||Hungary||<br>Latvia||Lithuania||Poland||Luxembourg||<br>Portugal||Spain||Sweden||Norway||Swiss||Iceland||Ukraine<br><br></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Gas Connect =SET D</td>
+        <td><br>Germany||France||Netherland||Italy||Austria||Bulgaria||Croatia||Czech||Estonia||Greece||Ireland||Latvia||Lithuania||<br>Poland||Luxembourg||Romania||Slovakia||Slovenia||Swiss||UK||Iceland||Ukraine
+            <br><br></td>
+    </tr>
+
+    <tr>
+        <td>UK upholstered Product</td>
+        <td>UK fire Retardant = True</td>
+        <td><br>Germany||France||Netherland||Italy||Austria||Belgium||Bulgaria||<br>Croatia||Czech||Denmark||Estonia||Greece||Hungary||Latvia||Lithuania||Poland||Luxembourg||<br>Portugal||Romania||Slovakia||Slovenia||Spain||Sweden||Swiss||Iceland||Ukraine
+            <br><br></td>
+        </tr>
+    <tr>
+        <td>EU upholstered Product</td>
+        <td>UK fire Retardant&lt;&gt; True</td>
+        <td>Norway||Finland||UK||Ireland</td>
+    </tr>
+    <tr>
+        <td>EUR Plug Product</td>
+        <td>Only Contains EU-2 pins (EU 7 CEE 7/17) OR EU-3 pins (Type E/F CEE 7/7)</td>
+        <td>Swiss||UK||Ireland</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>only has EU-2 pins (Type C CEE 7/16)</td>
+        <td>Ireland||UK</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Plug type only contain: UK</td>
+        <td><br>Germany||France||Netherland||Italy||Austria||Belgium||Bulgaria||Croatia||<br>Czech||Denmark||Estonia||Finland||Greece||Hungary||Latvia||Lithuania||Poland||<br>Luxembourg||Portugal||Romania||Slovakia||Slovenia||Spain||Sweden||Norway||Swiss||Iceland||Ukraine<br><br></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Contain  7/16 and (7/7 or 7/17)</td>
+        <td>Swiss||UK||Ireland</td>
+    </tr>
+    <tr>
+        <td>Animal/plant product sales within EU</td>
+        <td>/</td>
+        <td>Norway|| Swiss||UK||Iceland</td>
+    </tr>
+    </table>
+</div>
+</div> 
+</body>
+</html>
