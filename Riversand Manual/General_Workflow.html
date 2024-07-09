@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/4.7.0/css/font-awesome.css">
+    <title>The Manual for the Riversand</title>
+    <style>
+
+body{
+  background: #f2f2f2;
+}
+
+.searchTerm {
+  width: 20%;
+  border: 3px solid rgb(216, 188, 213);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+  position: absolute;right: 30px;top: 36px;
+}
+
+.searchTerm:focus{
+  color:black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(216, 188, 213);
+  background: rgb(216, 188, 213);
+  text-align: center;
+  color:white ;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;right: 28px;top: 36px;
+}
+
+
+
+        img{
+            width:180px; 
+           
+            position: fixed;top:16px;left: 98px;;
+            
+        }
+        ul {
+            list-style-type: none;
+            margin-top: 18px;
+            padding: 0;
+            width: fit-content;
+            background-color: rgb(216, 188, 213);
+            position: fixed;
+            height: fit-content;
+            overflow: auto;
+            border: 6px double whitesmoke;
+            
+        }
+ 
+    li a {
+        display: block;
+        color: rgb(147, 83, 147);
+        padding: 8px 16px;
+        text-decoration: none;
+        font-weight: 666;
+    }
+    li a.active {
+        background-color: plum;
+        color: plum;
+    }
+    /* 鼠标移动到选项上修改背景颜色 */
+    li a:hover:not(.active) {
+        background-color:rgb(130, 41, 130);
+        color: white;
+    }
+
+ .导航行 {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.导航行{
+    list-style-type: none;
+    margin-top: 88px;
+    padding: 6px;
+    overflow: auto;
+    background-color:  rgb(147, 62, 137);
+    
+}
+.导航行文本 {
+    float: right;
+    
+}
+.导航行文本 a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.导航行文本 a:hover {
+    background-color:  rgb(216, 188, 213);
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2;
+}
+
+    </style>
+</head>
+<body>
+<img src="image\R-C.png" alt="" > 
+
+<form class="example" action="">
+<input type="text" class="searchTerm" placeholder="Search">
+<button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+</form>
+
+ <u1 class="导航行">
+    <li class="导航行文本"><a href="Appendix.html">Appendix</a></li>
+    <li class="导航行文本"><a href="Golden_Tasks.html">Golden Tasks</a></li>
+    <li class="导航行文本"><a href="General_Workflow.html">General Workflow</a></li>
+    <li class="导航行文本"><a href="Operation_Guideline.html">Operation Guideline</a></li>
+</u1>
+ 
+ <ul>
+    <i class="fa fa-list" style="font-size:24px;color: rgb(145, 76, 145);" ></i>
+    <li><a href="#home">Flow Chart</a></li>
+    <li><a href="#news"> P 01</a></li>
+    <li><a href="#news"> P 02</a></li>
+    <li><a href="#news"> P 03</a></li>
+    <li><a href="#news"> P 04</a></li>
+    <li><a href="#contact">P 05</a></li>
+    <li><a href="#about">P 06</a></li>
+    <li><a href="#about">P 07</a></li>
+</ul>
+    
+
+</body>
+</html>

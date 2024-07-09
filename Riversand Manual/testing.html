@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="file" id="input-file" accept=".xlsx,.xls">
+    <button onclick="handleUpload()">Upload</button>
+    
+<button onclick="handleDownload()">Download</button>
+
+
+<script>
+function handleUpload() {
+  const fileInput = document.getElementById('input-file');
+  const file = fileInput.files[0];
+  
+  if (!file) {
+    alert('Please select a file!');
+    return;
+  }
+  //new formdata()函数是FormData的构造函数，用来生成一个新的FormData对象
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  // 发送文件到后端进行处理
+  fetch('http://127.0.0.1:3000/testing.html', {
+    method: 'POST',
+    body: formData
+  }).then(response => {
+    alert('Upload success!');
+  }).catch(error => {
+    console.error(error);
+    alert('Upload failed.');
+  });
+}
+
+function handleDownload() {
+  // 发送请求获取 Excel 文件流
+  fetch('http://127.0.0.1:3000/testing.html').then(response => {
+    return response.blob();
+  }).then(blob => {
+    // 创建并下载 Excel 文件
+    const url = window.URL.createObjectURL(new Blob([blob]));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Repeating Order Upload Template.xlsx';
+    document.appendChild(link);
+    link.click();
+    document.removeChild(link);
+  }).catch(error => {
+    console.error(error);
+    alert('Download failed.');
+  });
+}
+</script>
+</body>
+</html>
